@@ -47,6 +47,8 @@ git clone https://github.com/wgnann/krb2samba
  
 # gerar o dump de usuário no kerberos
 kdb5_util dump -b7 foo.mit foo@IME.USP.BR
+
+# também é possível gerar o dump de todos os usuários com o gen_dump.sh
  
 # colocar o dump em krb2samba/in/kdc_dump.mit
 # OBS: parâmetro mit_dump na configuração
