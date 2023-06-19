@@ -1,0 +1,27 @@
+[files]
+mit_dump = in/kdc_dump.mit
+master_key = in/kdc_master_key
+heimdal_path = /usr/sbin
+hashes = out/user_hashes.json
+users_ldif = out/addusers.ldif
+newusers_ldif = out/newusers.ldif
+groups_ldif = out/addgroups.ldif
+membership_script = out/setmembership.sh
+hashes_ldif = out/sethashes.ldif
+
+[opendirectory]
+dc = dc=mydirectory,dc=example,dc=org
+url = ldap://mydirectory
+username = adminuser
+password = SecretPassword
+host = mydirectory
+sshuser = root
+sshpass = SecretPassword
+
+[samba4]
+dc = dc=ime,dc=usp,dc=br
+url = ldap://192.168.121.105
+username = Administrator
+password = Alfafa1
+nis_domain = ime
+upn_realm = ime.usp.br
