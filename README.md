@@ -45,7 +45,7 @@ git clone https://github.com/wgnann/krb2samba
 # colocá-la em krb2samba/in/kdc_master_key
 # OBS: parâmetro master_key na configuração
  
-# gerar o dump de usuário no kerberos
+# gerar o dump de usuário no servidor kerberos
 kdb5_util dump -b7 foo.mit foo@IME.USP.BR
 
 # também é possível gerar o dump de todos os usuários com o gen_dump.sh
