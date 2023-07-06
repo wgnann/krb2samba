@@ -30,7 +30,7 @@ ldbmodify sethashes.ldif -H /var/lib/samba/private/sam.ldb --controls=local_oid:
 ### Lado do migrador
 O migrador pode ser rodado em conjunto do Samba, mas é preferível deixá-lo de fora dado que há a necessidade de instalar o `heimdal`.
 ```bash
-apt install git heimdal-clients heimdal-kdc python3-ldap
+apt install git heimdal-clients heimdal-kdc python3-ldap python3-samba
 
 # não queremos rodar o kdc do heimdal
 systemctl disable heimdal-kdc
